@@ -6,10 +6,10 @@ jobs:
     matrix:
      node-version: [12,13,14]
      operating-system: [ubuntu-latest,windows-latest]
-    exclude:
-     - node-version: 14
-       operating-system: windows-latest 
-   runs-on: ${{matrix.operating-system}}
+     exclude:
+        - node-version: 14
+          operating-system: windows-latest 
+    runs-on: ${{matrix.operating-system}}
    steps:
     - name: checkout the code
       uses: actions/checkout@v3
