@@ -9,7 +9,7 @@ jobs:
      exclude:
         - node-version: 14
           operating-system: windows-latest 
-    runs-on: ${{matrix.operating-system}}
+   runs-on: ${{matrix.operating-system}}
    steps:
     - name: checkout the code
       uses: actions/checkout@v3
